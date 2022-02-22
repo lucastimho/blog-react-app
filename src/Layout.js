@@ -1,8 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { Outlet, Link } from "react-router-dom";
-
-const Layout = () => {};
+// import { Outlet, Link } from "react-router-dom";
 
 function isLoggedIn() {
   if (localStorage.getItem("jwt")) {
@@ -24,7 +22,7 @@ const loginAlert = () => {
   }
 };
 
-const navBar = () => {
+const Layout = () => {
   return (
     <>
       <div class="container-fluid">
