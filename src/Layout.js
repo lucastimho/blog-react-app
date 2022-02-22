@@ -24,6 +24,19 @@ const loginAlert = () => {
   }
 };
 
+const navBar = () => {
+  return (
+    <>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+          Home
+        </a>
+      </div>
+    </>
+  );
+};
+
 export default Layout;
 
 ReactDOM.render(loginAlert, document.getElementsByClassName("alert alert-success alert-dismissible fade show"));
+ReactDOM.render(navBar, document.getElementsByClassName("navbar navbar-expand-lg navbar-light bg-light"));
