@@ -37,4 +37,4 @@ const Layout = () => {
 export default Layout;
 
 ReactDOM.render(loginAlert, document.getElementsByClassName("alert alert-success alert-dismissible fade show"));
-ReactDOM.render(navBar, document.getElementsByClassName("navbar navbar-expand-lg navbar-light bg-light"));
+ReactDOM.render(Layout, document.getElementsByClassName("navbar navbar-expand-lg navbar-light bg-light"));
