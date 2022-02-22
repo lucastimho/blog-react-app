@@ -33,11 +33,9 @@ export default function App() {
   );
 }
 
-const myfirstelement = <h1>Hello React!</h1>;
 function Hello() {
   return <h2>Hello World!</h2>;
 }
 
 ReactDOM.render(<App />, document.getElementById("app"));
-ReactDOM.render(myfirstelement, document.getElementById("mydiv"));
 ReactDOM.render(<Hello />, document.getElementById("root"));
