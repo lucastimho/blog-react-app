@@ -4,13 +4,13 @@ import { Outlet, Link } from "react-router-dom";
 
 const Layout = () => {};
 
-const isLoggedIn = () => {
+function isLoggedIn() {
   if (localStorage.getItem("jwt")) {
     return true;
   } else {
     return false;
   }
-};
+}
 
 const loginAlert = () => {
   if (isLoggedIn()) {
