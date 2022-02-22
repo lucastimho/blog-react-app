@@ -9,6 +9,8 @@ import PostIndex from "./PostIndex";
 import PostShow from "./PostShow";
 import About from "./About";
 import Login from "./Login";
+import Signup from "./Signup";
+import Logout from "./Logout";
 
 export default function App() {
   return (
@@ -23,6 +25,8 @@ export default function App() {
           <Route path="posts/index" element={<PostIndex />} />
           <Route path="posts/show" element={<PostShow />} />
           <Route path="posts/index" element={<PostIndex />} />
+          <Route path="signup" element={<Signup />} />
+          <Route path="logout" element={<Logout />} />
         </Route>
       </Routes>
     </BrowserRouter>
