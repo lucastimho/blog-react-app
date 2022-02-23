@@ -16,6 +16,7 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
+        <Layout />
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="posts/new" element={<PostNew />} />

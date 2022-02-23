@@ -31,7 +31,7 @@ const NavBar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid">
-        <NavLink className="navbar-brand" href="/">
+        <NavLink className="navbar-brand" to="/">
           Home
         </NavLink>
         <button
@@ -48,19 +48,19 @@ const NavBar = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <NavLink className="nav-link active" aria-current="page" href="/posts">
+              <NavLink className="nav-link active" aria-current="page" to="/posts">
                 All Posts
               </NavLink>
             </li>
             {isLoggedIn ? (
-              <li className="nav-item" v-if="isLoggedIn()">
-                <NavLink className="nav-link" href="/logout">
+              <li className="nav-item">
+                <NavLink className="nav-link" to="/logout">
                   Logout
                 </NavLink>
               </li>
             ) : (
-              <li className="nav-item" v-if="!isLoggedIn()">
-                <NavLink className="nav-link" href="/login">
+              <li className="nav-item">
+                <NavLink className="nav-link" to="/login">
                   Login
                 </NavLink>
               </li>
@@ -79,13 +79,13 @@ const NavBar = () => {
               <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                 {isLoggedIn && (
                   <li>
-                    <NavLink className="dropdown-item" href="/posts/new">
+                    <NavLink className="dropdown-item" to="/posts/new">
                       Create Post
                     </NavLink>
                   </li>
                 )}
                 <li>
-                  <NavLink className="dropdown-item" href="/about">
+                  <NavLink className="dropdown-item" to="/about">
                     About
                   </NavLink>
                 </li>
@@ -95,7 +95,7 @@ const NavBar = () => {
                       <hr className="dropdown-divider" />
                     </li>
                     <li>
-                      <NavLink className="dropdown-item" href="/signup">
+                      <NavLink className="dropdown-item" to="/signup">
                         Sign Up
                       </NavLink>
                     </li>
